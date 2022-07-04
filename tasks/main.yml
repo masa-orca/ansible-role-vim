@@ -1,5 +1,6 @@
 ---
 - name: Install vim
+  become: yes
   ansible.builtin.package:
     name: "vim={{ vim_version }}"
     state: present
